@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flight tickets</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1><i class="bi bi-airplane"></i>Flight tickets<br></h1><hr>
+      <div>
+        <i class="by"></i>
+        <label for="ticket-select">Choose a flight ticket:</label>
+        <select name="tickets" id="ticket-select" class="select">
+          <option value="">--choose--</option>
+          <option value="500">Praha 500 Kč</option>
+          <option value="3000">Frankfurt 3000 Kč</option>
+          <option value="15000">New York 15000 Kč</option>
+          <option value="30000">Sydney 30000 Kč</option>
+        </select>
+        <i class="by"></i>
+        <label for="quantity-select">Choose the quantity:</label>
+        <select name="quantity" id="quantity-select" class="select">
+          <option value="">--choose--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <i class="by"></i>
+        <label for="returnticket-checkbox">Choose return flight ticket:</label><i class="by"></i>
+          <input type="checkbox" id="returnticket-checkbox" name="returnticket " class="accent-color"/>
+          <label for="returnticket-checkbox">Yes</label>
+      </div><hr>
+      <fieldset>
+        <legend class="legend">Select class:</legend>     
+        <div>
+          <input type="radio" id="economyclass-radio" name="travelclass" value="1" class="accent-color" checked />
+          <label for="economyclass-radio">Economy class</label>
+        </div>    
+        <div>
+          <input type="radio" id="businessclass-radio" name="travelclass" value="1.25" class="accent-color" />
+          <label for="businessclass-radio">Business class </label>
+        </div>     
+        <div>
+          <input type="radio" id="royalclass-radio" name="travelclass" value="1.5" class="accent-color" />
+          <label for="businessclass-radio">Royal class</label>
+        </div>       
+      </fieldset><hr>
+      <div>
+      Total flight ticket price: <span id="total-price">0</span> Kč.
+      <label for="budget-text">Your budget:</label>
+      <input type="text" id="budget-text" name="budget" class="inputbox"> Kč.
+      <button type="button" class="btn-primary" id="checkbudget-button" name="checkbudget">Check your budget</button><hr>
+      </div>
+      <label for="story">Write to us:</label>
+        <div>
+            <textarea class="inputbox" id="message-textarea" name="message" rows="10" cols="40" placeholder="Write us something nice..."
+             onkeypress="SpecialCharNotAllowed(event)"></textarea>
+        </div>
+      <div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

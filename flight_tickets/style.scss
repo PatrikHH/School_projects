@@ -1,0 +1,77 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+  
+  .bi {
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+
+  .by {
+    margin: 10px;
+  }
+  .bi-airplane{
+    margin: 20px;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    color: rgb(250, 233, 0);
+  }
+  
+  body {
+    padding: 10px 10px 25px 25px;
+    background-color: rgb(84, 88, 82);
+    color: white;
+  }
+  legend {
+    font-size: 18px;
+  }
+  .btn-primary {
+    outline: none;
+    border: none;
+    background-color: rgb(250, 233, 0);
+    color: black;
+    margin: 5px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(246, 250, 0);
+    transform: 5vh;
+  }
+  .container {
+    display: flexbox;
+  }
+  
+  .select {
+    border: none;
+    outline: none;
+    background-color: rgb(250, 233, 0);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px;
+  }
+  
+  .select:hover {
+    border: none;
+    outline: none;
+    background-color: rgb(246, 250, 0);
+  }
+  
+  .inputbox {
+    background-color: rgb(250, 233, 0);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px;
+  }
+  .inputbox:hover {
+    background-color: rgb(246, 250, 0);
+  }
+  input.accent-color {
+    accent-color: rgb(250, 233, 0);
+  }
+  input.accent-color:hover {
+    accent-color: rgb(246, 250, 0);
+  }
